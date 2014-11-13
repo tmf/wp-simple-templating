@@ -1,0 +1,17 @@
+{
+  "name": "tmf/wp-simple-templating",
+  "description": "A service that ",
+  "require": {
+    "php": ">=5.4.0",
+    "tmf/wp-hookable-service": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["classes"]
+  },
+  "authors": [
+    {
+      "name": "Tom Forrer",
+      "email": "tom.forrer@gmail.com"
+    }
+  ]
+}
