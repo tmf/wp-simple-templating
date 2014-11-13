@@ -1,6 +1,6 @@
 {
   "name": "tmf/wp-simple-templating",
-  "description": "A service that ",
+  "description": "A service that lets wordpress themes be more flexible with the template locations",
   "require": {
     "php": ">=5.4.0",
     "tmf/wp-hookable-service": "dev-master"
