@@ -153,6 +153,13 @@ class SimpleTemplating extends HookableService
       $pageId = absint($_GET['post']);
     }
 
+    // check for revisions
+    if($pageId == null && isset($_GET['revision'])){
+      $revisionId = absint($_GET['revision']);
+      $revision = get_post($revisionId);
+      $pageId = $revision->post_parent;
+    }
+
     // check if it is really a page
     if ($pageId != null) {
       $object = get_post($pageId);
